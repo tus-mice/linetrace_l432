@@ -183,6 +183,180 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="nucleo32.Ibr">
+<packages>
+<package name="NUCLEO_L432KC">
+<pad name="P$1" x="2.54" y="-2.54" drill="1" shape="square"/>
+<pad name="P$2" x="2.54" y="-5.08" drill="1" shape="square"/>
+<pad name="P$3" x="2.54" y="-7.62" drill="1" shape="square"/>
+<pad name="P$4" x="2.54" y="-10.16" drill="1" shape="square"/>
+<pad name="P$5" x="2.54" y="-12.7" drill="1" shape="square"/>
+<pad name="P$6" x="2.54" y="-15.24" drill="1" shape="square"/>
+<pad name="P$7" x="2.54" y="-17.78" drill="1" shape="square"/>
+<pad name="P$8" x="2.54" y="-20.32" drill="1" shape="square"/>
+<pad name="P$9" x="2.54" y="-22.86" drill="1" shape="square"/>
+<pad name="P$10" x="2.54" y="-25.4" drill="1" shape="square"/>
+<pad name="P$11" x="2.54" y="-27.94" drill="1" shape="square"/>
+<pad name="P$12" x="2.54" y="-30.48" drill="1" shape="square"/>
+<pad name="P$13" x="2.54" y="-33.02" drill="1" shape="square"/>
+<pad name="P$14" x="2.54" y="-35.56" drill="1" shape="square"/>
+<pad name="P$15" x="2.54" y="-38.1" drill="1" shape="square"/>
+<pad name="P$16" x="17.78" y="-2.54" drill="1" shape="square"/>
+<pad name="P$17" x="17.78" y="-5.08" drill="1" shape="square"/>
+<pad name="P$18" x="17.78" y="-7.62" drill="1" shape="square"/>
+<pad name="P$19" x="17.78" y="-10.16" drill="1" shape="square"/>
+<pad name="P$20" x="17.78" y="-12.7" drill="1" shape="square"/>
+<pad name="P$21" x="17.78" y="-15.24" drill="1" shape="square"/>
+<pad name="P$22" x="17.78" y="-17.78" drill="1" shape="square"/>
+<pad name="P$23" x="17.78" y="-20.32" drill="1" shape="square"/>
+<pad name="P$24" x="17.78" y="-22.86" drill="1" shape="square"/>
+<pad name="P$25" x="17.78" y="-25.4" drill="1" shape="square"/>
+<pad name="P$26" x="17.78" y="-27.94" drill="1" shape="square"/>
+<pad name="P$27" x="17.78" y="-30.48" drill="1" shape="square"/>
+<pad name="P$28" x="17.78" y="-33.02" drill="1" shape="square"/>
+<pad name="P$29" x="17.78" y="-35.56" drill="1" shape="square"/>
+<pad name="P$30" x="17.78" y="-38.1" drill="1" shape="square"/>
+<wire x1="0" y1="-48.26" x2="20.32" y2="-48.26" width="0.127" layer="21"/>
+<wire x1="0" y1="-48.26" x2="0" y2="7.62" width="0.127" layer="21"/>
+<wire x1="0" y1="7.62" x2="20.32" y2="7.62" width="0.127" layer="21"/>
+<wire x1="20.32" y1="7.62" x2="20.32" y2="-48.26" width="0.127" layer="21"/>
+<circle x="1.905" y="0" radius="0.898025" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NUCLEO_L432KC">
+<pin name="1_PA9" x="7.62" y="0" length="middle"/>
+<pin name="2_PA10" x="7.62" y="-2.54" length="middle"/>
+<pin name="3_NRST" x="7.62" y="-5.08" length="middle"/>
+<pin name="4_GND" x="7.62" y="-7.62" length="middle" direction="pwr"/>
+<pin name="5_PA12" x="7.62" y="-10.16" length="middle"/>
+<pin name="6_PB0" x="7.62" y="-12.7" length="middle"/>
+<pin name="7_PB7" x="7.62" y="-15.24" length="middle"/>
+<pin name="8_PB6" x="7.62" y="-17.78" length="middle"/>
+<pin name="9_PB1" x="7.62" y="-20.32" length="middle"/>
+<pin name="10_PC14" x="7.62" y="-22.86" length="middle"/>
+<pin name="11_PC15" x="7.62" y="-25.4" length="middle"/>
+<pin name="12_PA8" x="7.62" y="-27.94" length="middle"/>
+<pin name="13_PA11" x="7.62" y="-30.48" length="middle"/>
+<pin name="14_PB5" x="7.62" y="-33.02" length="middle"/>
+<pin name="15_PB4" x="7.62" y="-35.56" length="middle"/>
+<pin name="16_VIN" x="53.34" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="17_GND" x="53.34" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="18_NRST" x="53.34" y="-5.08" length="middle" rot="R180"/>
+<pin name="19_+5V" x="53.34" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="20_PA2" x="53.34" y="-10.16" length="middle" rot="R180"/>
+<pin name="21_PA7" x="53.34" y="-12.7" length="middle" rot="R180"/>
+<pin name="22_PA6" x="53.34" y="-15.24" length="middle" rot="R180"/>
+<pin name="23_PA5" x="53.34" y="-17.78" length="middle" rot="R180"/>
+<pin name="24_PA4" x="53.34" y="-20.32" length="middle" rot="R180"/>
+<pin name="25_PA3" x="53.34" y="-22.86" length="middle" rot="R180"/>
+<pin name="26_PA1" x="53.34" y="-25.4" length="middle" rot="R180"/>
+<pin name="27_PA0" x="53.34" y="-27.94" length="middle" rot="R180"/>
+<pin name="28_AREF" x="53.34" y="-30.48" length="middle" rot="R180"/>
+<pin name="29_+3V3" x="53.34" y="-33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="30_PB3" x="53.34" y="-35.56" length="middle" rot="R180"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-38.1" x2="50.8" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="50.8" y1="-38.1" x2="50.8" y2="2.54" width="0.254" layer="94"/>
+<wire x1="50.8" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NUCLEO_L432KC">
+<gates>
+<gate name="G$1" symbol="NUCLEO_L432KC" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="NUCLEO_L432KC">
+<connects>
+<connect gate="G$1" pin="10_PC14" pad="P$10"/>
+<connect gate="G$1" pin="11_PC15" pad="P$11"/>
+<connect gate="G$1" pin="12_PA8" pad="P$12"/>
+<connect gate="G$1" pin="13_PA11" pad="P$13"/>
+<connect gate="G$1" pin="14_PB5" pad="P$14"/>
+<connect gate="G$1" pin="15_PB4" pad="P$15"/>
+<connect gate="G$1" pin="16_VIN" pad="P$16"/>
+<connect gate="G$1" pin="17_GND" pad="P$17"/>
+<connect gate="G$1" pin="18_NRST" pad="P$18"/>
+<connect gate="G$1" pin="19_+5V" pad="P$19"/>
+<connect gate="G$1" pin="1_PA9" pad="P$1"/>
+<connect gate="G$1" pin="20_PA2" pad="P$20"/>
+<connect gate="G$1" pin="21_PA7" pad="P$21"/>
+<connect gate="G$1" pin="22_PA6" pad="P$22"/>
+<connect gate="G$1" pin="23_PA5" pad="P$23"/>
+<connect gate="G$1" pin="24_PA4" pad="P$24"/>
+<connect gate="G$1" pin="25_PA3" pad="P$25"/>
+<connect gate="G$1" pin="26_PA1" pad="P$26"/>
+<connect gate="G$1" pin="27_PA0" pad="P$27"/>
+<connect gate="G$1" pin="28_AREF" pad="P$28"/>
+<connect gate="G$1" pin="29_+3V3" pad="P$29"/>
+<connect gate="G$1" pin="2_PA10" pad="P$2"/>
+<connect gate="G$1" pin="30_PB3" pad="P$30"/>
+<connect gate="G$1" pin="3_NRST" pad="P$3"/>
+<connect gate="G$1" pin="4_GND" pad="P$4"/>
+<connect gate="G$1" pin="5_PA12" pad="P$5"/>
+<connect gate="G$1" pin="6_PB0" pad="P$6"/>
+<connect gate="G$1" pin="7_PB7" pad="P$7"/>
+<connect gate="G$1" pin="8_PB6" pad="P$8"/>
+<connect gate="G$1" pin="9_PB1" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="frames" urn="urn:adsk.eagle:library:229">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A3L-LOC" urn="urn:adsk.eagle:symbol:13881/1" library_version="1">
+<wire x1="288.29" y1="3.81" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="3.81" x2="373.38" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="383.54" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="3.81" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="8.89" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="13.97" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="19.05" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="3.81" x2="288.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="24.13" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="24.13" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="373.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="342.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="342.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="344.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="344.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="357.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A3L-LOC" urn="urn:adsk.eagle:component:13942/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A3, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -194,15 +368,23 @@
 </classes>
 <parts>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="U$1" library="nucleo32.Ibr" deviceset="NUCLEO_L432KC" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="JP1" gate="G$1" x="12.7" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.05" y="22.225" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="19.05" y="33.02" size="1.778" layer="96" rot="R180"/>
+<instance part="JP1" gate="G$1" x="10.16" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.51" y="24.765" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="U$1" gate="G$1" x="55.88" y="66.04" smashed="yes"/>
+<instance part="FRAME1" gate="G$1" x="2.54" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="346.71" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="346.71" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="360.045" y="5.08" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -214,6 +396,11 @@
 </schematic>
 </drawing>
 <compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
