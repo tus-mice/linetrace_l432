@@ -18753,6 +18753,12 @@ Source: www.kingbright.com</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -18781,6 +18787,166 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="RPR-220">
+<description>&lt;Reflective Photosensor IR+Transistor 6mm ROHM RPR-220 RPR, Through Hole Reflective Sensor, Phototransistor Output&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="RPR-220">
+<description>&lt;b&gt;RPR-220&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-1.4" y="1.25" drill="1.05" diameter="1.6"/>
+<pad name="2" x="-1.4" y="-1.25" drill="1.05" diameter="1.6"/>
+<pad name="3" x="1.4" y="-1.25" drill="1.05" diameter="1.6"/>
+<pad name="4" x="1.4" y="1.25" drill="1.05" diameter="1.6"/>
+<text x="-0.287" y="0.091" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.287" y="0.091" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<circle x="-3.652" y="1.315" radius="0.046490625" width="0.254" layer="25"/>
+<wire x1="-3.2" y1="2.45" x2="3.2" y2="2.45" width="0.254" layer="51"/>
+<wire x1="3.2" y1="2.45" x2="3.2" y2="-2.45" width="0.254" layer="51"/>
+<wire x1="3.2" y1="-2.45" x2="-3.2" y2="-2.45" width="0.254" layer="51"/>
+<wire x1="-3.2" y1="-2.45" x2="-3.2" y2="2.45" width="0.254" layer="51"/>
+<wire x1="-3.2" y1="-2.45" x2="-3.2" y2="2.45" width="0.254" layer="21"/>
+<wire x1="-3.2" y1="2.45" x2="3.2" y2="2.45" width="0.254" layer="21"/>
+<wire x1="3.2" y1="2.45" x2="3.2" y2="-2.45" width="0.254" layer="21"/>
+<wire x1="3.2" y1="-2.45" x2="-3.2" y2="-2.45" width="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RPR-220">
+<wire x1="5.08" y1="2.54" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-5.08" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="34.29" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="34.29" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="ANODE" x="0" y="0" length="middle"/>
+<pin name="CATHODE" x="0" y="-2.54" length="middle"/>
+<pin name="EMITTER" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="COLLECTOR" x="38.1" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RPR-220" prefix="Q">
+<description>&lt;b&gt;Reflective Photosensor IR+Transistor 6mm ROHM RPR-220 RPR, Through Hole Reflective Sensor, Phototransistor Output&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://rohmfs.rohm.com/en/products/databook/datasheet/opto/optical_sensor/photosensor/rpr-220.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RPR-220" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RPR-220">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="1"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+<connect gate="G$1" pin="COLLECTOR" pad="4"/>
+<connect gate="G$1" pin="EMITTER" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Reflective Photosensor IR+Transistor 6mm ROHM RPR-220 RPR, Through Hole Reflective Sensor, Phototransistor Output" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ROHM Semiconductor" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="RPR-220" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="755-RPR-220" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=755-RPR-220" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="1246800P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1246800P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="TA8428K(O_S)">
+<description>&lt;Moter Driver,Full Brdg Driver,HSIP7 TA8428K(O,S), Motor Driver, Full Bridge Motor, Maximum of 30 V, 7-Pin SIP&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="HSIP7-P-2.54_1">
+<description>&lt;b&gt;HSIP7P2.54&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-7.62" y="0" drill="1.26" diameter="1.86"/>
+<pad name="2" x="-5.08" y="0" drill="1.26" diameter="1.86"/>
+<pad name="3" x="-2.54" y="0" drill="1.26" diameter="1.86"/>
+<pad name="4" x="0" y="0" drill="1.26" diameter="1.86"/>
+<pad name="5" x="2.54" y="0" drill="1.26" diameter="1.86"/>
+<pad name="6" x="5.08" y="0" drill="1.26" diameter="1.86"/>
+<pad name="7" x="7.62" y="0" drill="1.26" diameter="1.86"/>
+<text x="-0.303" y="0.066" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="-0.303" y="0.066" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-8" y1="1.5" x2="8" y2="1.5" width="0.2" layer="51"/>
+<wire x1="8" y1="1.5" x2="8" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="8" y1="-1.5" x2="-8" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="-8" y1="-1.5" x2="-8" y2="1.5" width="0.2" layer="51"/>
+<wire x1="-8" y1="1.5" x2="8" y2="1.5" width="0.2" layer="21"/>
+<wire x1="8" y1="-1.5" x2="-8" y2="-1.5" width="0.2" layer="21"/>
+<circle x="-9.317" y="-0.017" radius="0.111" width="0.2" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TA8428K(O,S)">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="IN1" x="0" y="0" length="middle"/>
+<pin name="IN2" x="0" y="-2.54" length="middle"/>
+<pin name="OUTA" x="0" y="-5.08" length="middle"/>
+<pin name="GND" x="0" y="-7.62" length="middle"/>
+<pin name="OUT_!A" x="0" y="-10.16" length="middle"/>
+<pin name="N.C" x="0" y="-12.7" length="middle" direction="nc"/>
+<pin name="VCC" x="0" y="-15.24" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TA8428K(O,S)" prefix="U">
+<description>&lt;b&gt;Moter Driver,Full Brdg Driver,HSIP7 TA8428K(O,S), Motor Driver, Full Bridge Motor, Maximum of 30 V, 7-Pin SIP&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=8558&amp;prodName=TA8428K"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TA8428K(O,S)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HSIP7-P-2.54_1">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="2"/>
+<connect gate="G$1" pin="N.C" pad="6"/>
+<connect gate="G$1" pin="OUTA" pad="3"/>
+<connect gate="G$1" pin="OUT_!A" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Moter Driver,Full Brdg Driver,HSIP7 TA8428K(O,S), Motor Driver, Full Bridge Motor, Maximum of 30 V, 7-Pin SIP" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Toshiba" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TA8428K(O,S)" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="757-TA8428KOS" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=757-TA8428KOS" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="6939336" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/6939336" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -18799,7 +18965,7 @@ Source: www.kingbright.com</description>
 <part name="IC1" library="TA4805S" deviceset="TA4805S" device=""/>
 <part name="Q1" library="IRFU5505PBF" deviceset="IRFU5505PBF" device=""/>
 <part name="U$2" library="toggle-switch" deviceset="TOGGLE-SWITCH" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100k"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="4.7k"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100k"/>
@@ -18808,17 +18974,48 @@ Source: www.kingbright.com</description>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="47μ"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="Q2" library="RPR-220" deviceset="RPR-220" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="19k"/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q3" library="RPR-220" deviceset="RPR-220" device=""/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="19k"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q4" library="RPR-220" deviceset="RPR-220" device=""/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="100"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="19k"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="U1" library="TA8428K(O_S)" deviceset="TA8428K(O,S)" device=""/>
+<part name="U2" library="TA8428K(O_S)" deviceset="TA8428K(O,S)" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="15.24" y="246.38" size="6.4516" layer="94">Power</text>
+<wire x1="7.62" y1="180.34" x2="109.22" y2="180.34" width="0.1524" layer="94"/>
+<wire x1="109.22" y1="180.34" x2="109.22" y2="256.54" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="180.34" x2="302.26" y2="180.34" width="0.1524" layer="94"/>
+<wire x1="302.26" y1="180.34" x2="302.26" y2="256.54" width="0.1524" layer="94"/>
+<text x="114.3" y="246.38" size="6.4516" layer="94">SENSOR</text>
 </plain>
 <instances>
 <instance part="JP1" gate="G$1" x="30.48" y="213.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.83" y="207.645" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="36.83" y="218.44" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="55.88" y="66.04" smashed="yes"/>
+<instance part="U$1" gate="G$1" x="162.56" y="147.32" smashed="yes"/>
 <instance part="FRAME1" gate="G$1" x="2.54" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="346.71" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="346.71" y="10.16" size="2.286" layer="94"/>
@@ -18832,9 +19029,9 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="54.61" y="234.95" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="57.15" y="232.41" size="1.778" layer="96" rot="MR0" align="center-left"/>
 </instance>
-<instance part="U$2" gate="G$1" x="48.26" y="210.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.18" y="203.2" size="1.778" layer="95"/>
-<attribute name="VALUE" x="35.56" y="200.66" size="1.778" layer="96"/>
+<instance part="U$2" gate="G$1" x="48.26" y="205.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.18" y="198.12" size="1.778" layer="95"/>
+<attribute name="VALUE" x="35.56" y="195.58" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="40.64" y="223.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.1414" y="219.71" size="1.778" layer="95" rot="R90"/>
@@ -18870,6 +19067,93 @@ Source: www.kingbright.com</description>
 <instance part="P+1" gate="1" x="96.52" y="233.68" smashed="yes">
 <attribute name="VALUE" x="99.06" y="236.22" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="LED2" gate="G$1" x="40.64" y="215.9" smashed="yes">
+<attribute name="NAME" x="44.196" y="211.328" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.355" y="211.328" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="Q2" gate="G$1" x="127" y="218.44" smashed="yes">
+<attribute name="NAME" x="130.81" y="226.06" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="130.81" y="223.52" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="238.76" y="160.02" smashed="yes">
+<attribute name="VALUE" x="236.22" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V2" gate="G$1" x="124.46" y="238.76" smashed="yes">
+<attribute name="VALUE" x="121.92" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R5" gate="G$1" x="124.46" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.9614" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="127.762" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND2" gate="1" x="124.46" y="198.12" smashed="yes">
+<attribute name="VALUE" x="121.92" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="165.1" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.6014" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="168.402" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="165.1" y="198.12" smashed="yes">
+<attribute name="VALUE" x="162.56" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="Q3" gate="G$1" x="187.96" y="218.44" smashed="yes">
+<attribute name="NAME" x="191.77" y="226.06" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="191.77" y="223.52" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="185.42" y="238.76" smashed="yes">
+<attribute name="VALUE" x="182.88" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R7" gate="G$1" x="185.42" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="183.9214" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="188.722" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND4" gate="1" x="185.42" y="198.12" smashed="yes">
+<attribute name="VALUE" x="182.88" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="226.06" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="224.5614" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="229.362" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND5" gate="1" x="226.06" y="198.12" smashed="yes">
+<attribute name="VALUE" x="223.52" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="Q4" gate="G$1" x="248.92" y="218.44" smashed="yes">
+<attribute name="NAME" x="252.73" y="226.06" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="252.73" y="223.52" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="+3V4" gate="G$1" x="246.38" y="238.76" smashed="yes">
+<attribute name="VALUE" x="243.84" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R9" gate="G$1" x="246.38" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.8814" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="249.682" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND6" gate="1" x="246.38" y="198.12" smashed="yes">
+<attribute name="VALUE" x="243.84" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="287.02" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="285.5214" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="290.322" y="204.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="287.02" y="198.12" smashed="yes">
+<attribute name="VALUE" x="284.48" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V5" gate="G$1" x="165.1" y="238.76" smashed="yes">
+<attribute name="VALUE" x="162.56" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V6" gate="G$1" x="226.06" y="238.76" smashed="yes">
+<attribute name="VALUE" x="223.52" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="287.02" y="238.76" smashed="yes">
+<attribute name="VALUE" x="284.48" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U1" gate="G$1" x="99.06" y="55.88" smashed="yes">
+<attribute name="NAME" x="120.65" y="63.5" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="120.65" y="60.96" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="U2" gate="G$1" x="139.7" y="55.88" smashed="yes">
+<attribute name="NAME" x="161.29" y="63.5" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="161.29" y="60.96" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18888,12 +19172,11 @@ Source: www.kingbright.com</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="48.26" y1="220.98" x2="48.26" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="218.44" x2="48.26" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="218.44" x2="48.26" y2="218.44" width="0.1524" layer="91"/>
-<junction x="48.26" y="218.44"/>
+<wire x1="48.26" y1="220.98" x2="48.26" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="40.64" y1="210.82" x2="48.26" y2="210.82" width="0.1524" layer="91"/>
+<junction x="48.26" y="210.82"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -18938,7 +19221,7 @@ Source: www.kingbright.com</description>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="210.82" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="198.12" x2="50.8" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="198.12" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="198.12" x2="50.8" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="60.96" y1="203.2" x2="60.96" y2="198.12" width="0.1524" layer="91"/>
@@ -18962,6 +19245,36 @@ Source: www.kingbright.com</description>
 <junction x="33.02" y="198.12"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="200.66" x2="124.46" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="200.66" x2="165.1" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="200.66" x2="185.42" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="200.66" x2="226.06" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="246.38" y1="200.66" x2="246.38" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="200.66" x2="287.02" y2="203.2" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -18972,6 +19285,111 @@ Source: www.kingbright.com</description>
 <junction x="91.44" y="228.6"/>
 <wire x1="96.52" y1="228.6" x2="96.52" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="29_+3V3"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="215.9" y1="114.3" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="114.3" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="Q2" gate="G$1" pin="ANODE"/>
+<wire x1="124.46" y1="236.22" x2="124.46" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="218.44" x2="127" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<pinref part="Q3" gate="G$1" pin="ANODE"/>
+<wire x1="185.42" y1="236.22" x2="185.42" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="218.44" x2="187.96" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="Q4" gate="G$1" pin="ANODE"/>
+<wire x1="246.38" y1="236.22" x2="246.38" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="218.44" x2="248.92" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="165.1" y1="233.68" x2="165.1" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="COLLECTOR"/>
+<wire x1="165.1" y1="226.06" x2="165.1" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="223.52" x2="165.1" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="236.22" x2="165.1" y2="226.06" width="0.1524" layer="91"/>
+<junction x="165.1" y="236.22"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="COLLECTOR"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="226.06" y1="236.22" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q4" gate="G$1" pin="COLLECTOR"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="287.02" y1="236.22" x2="287.02" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="213.36" x2="124.46" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="CATHODE"/>
+<wire x1="124.46" y1="215.9" x2="127" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SEN_R" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="213.36" x2="287.02" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="EMITTER"/>
+<wire x1="287.02" y1="215.9" x2="289.56" y2="215.9" width="0.1524" layer="91"/>
+<junction x="287.02" y="215.9"/>
+<label x="299.72" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="213.36" x2="185.42" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="CATHODE"/>
+<wire x1="185.42" y1="215.9" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="213.36" x2="246.38" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="CATHODE"/>
+<wire x1="246.38" y1="215.9" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SEN_C" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="213.36" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="EMITTER"/>
+<wire x1="226.06" y1="215.9" x2="228.6" y2="215.9" width="0.1524" layer="91"/>
+<junction x="226.06" y="215.9"/>
+<label x="238.76" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SEN_L" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="213.36" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="EMITTER"/>
+<wire x1="165.1" y1="215.9" x2="167.64" y2="215.9" width="0.1524" layer="91"/>
+<junction x="165.1" y="215.9"/>
+<label x="177.8" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
